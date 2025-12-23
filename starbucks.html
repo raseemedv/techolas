@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+
+        }
+
+        .header {
+            display: flex;
+            background-color: white;
+            justify-content: space-between;
+            padding: 25px;
+            /* border: 2px solid gray; */
+        }
+
+        .image img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+
+        .navbar {
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            text-decoration: none;
+
+        }
+
+        .actions {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .actions a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .actions img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .button1 {
+            background-color: white;
+            text-align: center;
+            color: black;
+            border-radius: 30px;
+        }
+
+        .button2 {
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius: 30px;
+        }
+
+        .header2 {
+            display: flex;
+            background-color: #32462f;
+            color: white;
+            justify-content: center;
+            padding: 25px;
+            gap: 20px;
+        }
+
+        .p1 {
+            color: white;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .button3 {
+            border-radius: 30px;
+            background: transparent;
+            color: white;
+            border: 1px solid white;
+
+        }
+
+        .button3:hover {
+            background-color: #108b6a;
+        }
+
+        .hero {
+            display: flex;
+            min-height: 80vh;
+            margin-top: 30px;
+        }
+
+        .header3 {
+            width: 50%;
+            background: #dfe6e9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header3 img {
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .header4 {
+            width: 50%;
+            background: #006241;
+            color: white;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .header4 h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 1.2;
+            display: inline-block;
+            padding: 20px;
+            margin-bottom: 25px;
+            color: white;
+        }
+
+        .header4 p {
+            font-size: 1, 05rem;
+            line-height: 1.6;
+            max-width: 450px;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .button4 {
+            padding: 12px 30px;
+            border-radius: 30px;
+            border: 1px solid white;
+            background: transparent;
+            font-size: 1rem;
+            align-self: center;
+
+        }
+
+        .button4:hover {
+            background-color: white;
+        }
+
+        .hero2 {
+            display: flex;
+            min-height: 80vh;
+            margin-top: 30px;
+        }
+
+        .header5 {
+            width: 50%;
+            background: #aa1d38;
+            color: white;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .header5 h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 1.2;
+            display: inline-block;
+            padding: 20px;
+            margin-bottom: 25px;
+            color: white;
+        }
+
+        .header5 p {
+            font-size: 1, 05rem;
+            line-height: 1.6;
+            max-width: 450px;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .button5 {
+            padding: 12px 30px;
+            border-radius: 30px;
+            background: white;
+            font-size: 1rem;
+            align-self: center;
+            color: rgb(61, 149, 61);
+            border: 1px solid white;
+
+        }
+
+        .button5:hover {
+            background-color: rgb(210, 194, 208);
+        }
+
+        .header6 {
+            width: 50%;
+            background: #dfe6e9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header6 img {
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .hero3 {
+            display: flex;
+            height: 80vh;
+            margin-top: 30px;
+        }
+
+        .header7 {
+            width: 50%;
+            background: #dfe6e9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header7 img {
+            width: 100%;
+            max-width: 550px;
+        }
+
+        .header8 {
+            width: 50%;
+            background: #a30834;
+            color: white;
+            padding: 90px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .header8 h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 1.2;
+            display: inline-block;
+            padding: 20px;
+            margin-bottom: 25px;
+            color: white;
+        }
+
+        .header8 p {
+            font-size: 1, 05rem;
+            line-height: 1.6;
+            max-width: 450px;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .button6 {
+            padding: 12px 30px;
+            border-radius: 30px;
+            background: #a30834;
+            font-size: 1rem;
+            align-self: center;
+            color: white;
+            border: 1px solid;
+
+        }
+
+        .button6:hover {
+            background-color: #5e051e;
+        }
+
+        .hero4 {
+            display: flex;
+            height: 80vh;
+            margin-top: 30px;
+        }
+
+        .header9 {
+            width: 50%;
+            background: #aa1d38;
+            color: white;
+            padding: 90px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .header9 h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 1.2;
+            display: inline-block;
+            padding: 20px;
+            margin-bottom: 25px;
+            color: white;
+        }
+
+        .header9 p {
+            font-size: 1, 05rem;
+            line-height: 1.6;
+            max-width: 450px;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .button7 {
+            padding: 12px 30px;
+            border-radius: 30px;
+            background: #aa1d38;
+            font-size: 1rem;
+            align-self: center;
+            color: white;
+            border: 1px solid;
+
+        }
+
+        .button7:hover {
+            background-color: #9c1e35;
+        }
+
+        .header10 {
+            width: 50%;
+            background: #dfe6e9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header10 img {
+            width: 100%;
+            max-width: 700px;
+        }
+        .hero5 {
+            display: flex;
+            width: 100%;
+            margin-top: 30px;
+        }
+        
+        .header11 {
+            width: 50%;
+
+        }
+
+        .header11 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0;
+        }
+        .header12 {
+            width: 50%;
+            background: #f1f0e4;
+            color: #32472f;
+            padding: 50px;
+            height: 245px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .header12 h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 1.2;
+            display: inline-block;
+            padding: 20px;
+            margin-bottom: 25px;
+            color: #32472f;
+        }
+
+        .header12 p {
+            font-size: 1, 05rem;
+            line-height: 1.6;
+            max-width: 450px;
+            margin-bottom: 30px;
+            color: #32472f;
+            justify-content: center;
+        }  
+         .button8 {
+            padding: 12px 30px;
+            border-radius: 30px;
+            background-color: hsla(158,100%,23%,1);
+            font-size: 1rem;
+            align-self: center;
+            color: white;
+            border: 1px solid hsla(158,100%,23%,1);
+        }
+        .button8:hover{
+            background-color: rgb(43, 206, 146);
+        } 
+        .footer{
+             
+            background: #ffffff;
+            padding: 50px;
+            font-family: arial, sans-serif;
+            border-top: 1px solid #ddd;
+        } 
+        .footer-links{
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 40px;
+            padding: 0 20px;
+        }
+      
+        .footer-col h1{
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #000;
+        }
+        .footer-col ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-col ul li{
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .footer-col a{
+            text-decoration: none;
+            color: #555;
+            font-size: 14px;
+        }
+        .footer-social{
+            display: flex;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .footer-social a{
+            font-size: 22px;
+            text-decoration: none;
+        }
+        .footer-bottom a{
+            display: block;
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 6px;
+            text-decoration: none;
+        }
+        .footer-social img{
+            width: 20px;
+            height: 20px;
+        }
+        .footer-bottom p{
+            font-size: 12px;
+            color: #777;
+            margin-top: 10px;
+        }
+
+         
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="image">
+                <img src="stl.png" alt="logo" />
+            </div>
+            <li><a class="nav-link" href="">MENU</a></li>
+            <li><a class="nav-link" href="">REWARDS</a></li>
+            <li><a class="nav-link" href="">GIFT CARDS</a></li>
+        </div>
+        <div class="actions">
+            <img src="lo.jpg" alt="location" />
+            <a href="">Find a store</a>
+            <button class="button1">Sign in</button>
+            <button class="button2">Join now</button>
+        </div>
+    </div>
+    </div>
+    <div class="header2"> <br>
+        <p class="p1">It's a great day for coffee</p> <br><br>
+        <button class="button3">start an order</button>
+    </div> <br>
+    <section class="hero">
+        <div class="header3">
+            <img src="p.jpg" alt="image">
+        </div>
+        <div class="header4">
+            <h1>Starbucks For
+                Life Merrython
+                is here
+            </h1>
+
+            <p>
+                Chase the cheer in the new
+                Starbucks for Life Merrython game.
+                Simply join the fun for a
+                chance to win weekly grand prizes like
+                Starbucks for Life*. First
+                stop: Seattle.
+            </p>
+            <button class="button4">Play now</button>
+        </div>
+    </section> <br>
+    <section class="hero2">
+        <div class="header5">
+            <h1>Bring on the merry</h1>
+            <p>Festive flavors of spiced gingerbread,
+                rich caramel and sweet peppermint are
+                here to make every moment
+                merrier.
+            </p>
+            <button class="button5">order a seasonal treat</button>
+        </div>
+        <div class="header6">
+            <img src="stp2.jpg" alt="">
+        </div>
+    </section> <br>
+    <section class="hero3">
+        <div class="header7">
+            <img src="stp3.jpg" alt="">
+        </div>
+        <div class="header8">
+            <h1>Our Roller Rabbit collection is here</h1>
+            <p>Grab the whimsical, limited-edition drinkware and
+                Starbucks Card at your local coffeehouse. While
+                supplies last.</p>
+            <button class="button6">learn more</button>
+        </div>
+    </section> <br>
+    <section class="hero4">
+        <div class="header9">
+            <h1>Holiday classics to gift and share</h1>
+            <p>A new expression of our beloved Starbucks® Christmas
+                Blonde Roast with notes of spiced orange and fig
+                compote, and classic Starbucks® Christmas Blend with
+                notes of spiced chocolate and spruce tips.
+            </p>
+            <button class="button7">start an order</button>
+        </div>
+        <div class="header10">
+            <img src="st4.jpg" alt="">
+        </div>
+    </section> <br>
+    <section class="hero5">
+        <div class="header11">
+            <img src="st5.jpg" alt="">
+        </div>
+        <div class="header12">
+            <h1>Our gift to you</h1>
+            <p>Make the season merrier with a <b>free handcrafted drink</b>with 
+                purchase. It's
+                 our treat during your
+                first week as a Starbucks® Rewards member.**
+            </p>
+            <button class="button8">Join now</button>
+        </div>
+    </section> <br>
+    <footer class="footer">
+        <div class="footer-links">
+             <div class="footer-col">
+                <h1>About Us</h1>
+            <ul>
+                    <li><a href="#">Our Company</a></li>
+                    <li><a href="#">Our Coffee</a></li>
+                    <li><a href="#">about starbucks</a></li>
+                    <li><a href="#">starbucks Archive</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+            </ul>
+             </div>
+               <div class="footer-col">
+                 <h1>Careers</h1>
+                <ul>
+                    <li><a href="#">Culture and Values</a></li>
+                    <li><a href="#">Belonging at Starbucks</a></li>
+                    <li><a href="#">College Achievment Plan</a></li>
+                    <li><a href="#">Alumni Community</a></li>
+                    <li><a href="#">U.S. Careers</a></li>
+                    <li><a href="#">International Careers</a></li>
+                </ul>
+               </div>
+                <div class="footer-col">
+                    <h1>Social Impact</h1>
+                <ul>
+                    <li><a href="#">Communities</a></li>
+                    <li><a href="#">starbucks Foundation</a></li>
+                    <li><a href="#">Sustainablity</a></li>
+                    <li><a href="#">Environmntel and social imapct reporting</a></li>
+                </ul>
+                </div>
+                 <div class="footer-col">
+                     <h1>For Buisness Partners</h1>
+                <ul>
+                    <li><a href="#"></a>land lord support centre</li>
+                    <li><a href="#"></a>suppliers</li>
+                    <li><a href="#"></a>Corprate Gift Card Sales</li>
+                    <li><a href="#"></a>Office and Foodservice Cofee</li>
+                </ul>
+                 </div>
+                <div class="footer-col">
+                    <h1>Order and Pick Up</h1>
+                <ul>
+                    <li><a href="#">order on the app</a></li>
+                    <li><a href="#">order on the web</a></li>
+                    <li><a href="#">delivary</a></li>
+                    <li><a href="#">order and pickup options</a></li>
+                    <li><a href="#">explore and Find Cofee for Home </a></li>
+                </ul>
+                </div>
+        </div>
+        <div class="footer-bottom">
+        <div class="footer-social">
+            <a href="" ><img src="spotify.png" alt="spotify"></a>
+            <a href=""><img src="facebooklogo.jpeg" alt=""></a>
+            <a href=""><img src="pintrestlogo.png" alt=""></a>
+            <a href=""><img src="instalogo.png" alt=""></a>
+            <a href=""><img src="youtubelogo.png" alt=""></a>
+            <a href=""><img src="twitterlogo.png" alt=""></a>
+        </div>
+            <a href="#">privacy notice</a>
+            <a href="#">consumer health privacy notice</a>
+            <a href="#">terms of use</a>
+            <a href="#">do not sell or share my personal information</a>
+            <a href="#">ca supply chain act</a>
+            <a href="#">accessibility</a>
+            <a href="#">cookie preference</a>
+            <p>&copy;2025 starbucks cofee company. all rights reserved.</p>
+        </div>    
+        </div>
+    </footer>
+</body>
+
+</html>
+</body>
+
+</html>
